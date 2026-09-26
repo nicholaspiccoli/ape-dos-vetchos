@@ -1,25 +1,60 @@
-# Casa que Acolhe — Redecoração para os avós
+# Casa que Acolhe
 
-Microsite conceitual de redecoração de uma sala de estar/jantar para dois moradores idosos, com foco em conforto, orientação espacial, circulação desobstruída e familiaridade visual.
+Microsite editorial para apresentar um estudo conceitual de readequação residencial voltado a idosos, com foco em segurança, orientação, autonomia, memória afetiva e conforto.
 
-## Estrutura
+## Escopo atual
 
-- `index.html` — narrativa principal
-- `styles.css` — tema visual responsivo
-- `motion.js` — progressive enhancement, reveals, foco, parallax leve e scroll progress
-- `assets/antes-01.jpeg` e `assets/antes-02.jpeg` — fotografias originais fornecidas para o estudo
+O material-fonte disponível documenta apenas **sala de estar + jantar**. O projeto não inventa plantas nem renders de quarto, banheiro e cozinha. Esses ambientes ficam explicitamente marcados como pendentes de fotos e medidas.
 
-As visualizações de proposta foram geradas a partir das imagens de referência e são estudos conceituais, não projeto executivo ou levantamento métrico.
+## Stack
 
-## Acessibilidade e robustez
+HTML semântico + CSS + JavaScript nativo.
 
-- HTML semântico
-- conteúdo visível sem JavaScript
-- `prefers-reduced-motion`
-- navegação por teclado preservada
-- motion reduzido no mobile
-- imagens fora da primeira dobra com lazy loading
+A opção por site estático é deliberada: este projeto não possui autenticação, banco ou estado de negócio. A entrega estática reduz dependências, runtime, superfície de falha, custo de carregamento e risco de exposição de dados, sendo adequada para Vercel/CDN.
 
-## Execução local
+## Design system
 
-Abra `index.html` diretamente ou use qualquer servidor HTTP estático.
+- Theme: Quiet Warm Architecture
+- Display: Newsreader
+- Accent: Cormorant Garamond
+- Body: Atkinson Hyperlegible
+- Motion: progressive enhancement com IntersectionObserver + requestAnimationFrame + CSS custom properties
+
+## Recursos
+
+- hero editorial;
+- auditoria visual anonimizada;
+- hotspots de risco;
+- before/after acessível;
+- diagrama conceitual de zonas;
+- design bible;
+- matriz filtrável de intervenções;
+- cena noturna;
+- galeria de 12 peças visuais;
+- roadmap por fases;
+- referências externas de segurança.
+
+## Privacidade
+
+As fotografias originais identificáveis não são publicadas no site. A vista “antes” é uma reconstituição anonimizada baseada na fotografia original.
+
+## Arquivos
+
+- `index.html`
+- `styles.css`
+- `motion.js`
+- `assets/*.webp`
+- `data/interventions.json`
+- `docs/ARCHITECTURE_BRIEF.md`
+- `docs/DESIGN_BIBLE.md`
+- `docs/INTERVENTION_PLAN.md`
+- `docs/QA_REPORT.md`
+- `vercel.json`
+
+## Deploy
+
+Vercel: site estático, sem build command.
+
+## Imagens
+
+As visualizações fotorealistas são servidas por assets do Adobe Creative Cloud/Photoshop. As fotografias originais identificáveis dos moradores não são publicadas no HTML. A vista “antes” utilizada no comparador foi anonimizada por edição generativa preservando a configuração do ambiente.

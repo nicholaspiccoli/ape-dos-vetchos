@@ -1,186 +1,366 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f3efe7" />
-  <meta name="description" content="Plano conceitual de redecoração da sala para um casal idoso, com foco em conforto, orientação, circulação e familiaridade." />
-  <title>Casa que Acolhe — Plano de Redecoração</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#F4EEE6" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Casa que Acolhe: estudo conceitual de readequação residencial para idosos, com foco em segurança, autonomia, orientação, memória e conforto." />
+  <title>Casa que Acolhe — Readequação residencial para idosos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Cormorant+Garamond:ital,wght@1,500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
   <header class="topbar" aria-label="Navegação principal">
-    <a class="brand" href="#inicio">Casa que Acolhe</a>
-    <nav>
-      <a href="#conceito">Conceito</a>
-      <a href="#galeria">Vistas</a>
-      <a href="#prioridades">Prioridades</a>
+    <a class="brand" href="#inicio" aria-label="Casa que Acolhe — início">
+      <span class="brand-mark" aria-hidden="true">CA</span>
+      <span>Casa que Acolhe</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav">
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#transformacao">Transformação</a>
+      <a href="#intervencoes">Intervenções</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#execucao">Execução</a>
     </nav>
   </header>
 
-  <main>
-    <section id="inicio" class="hero motion-scene">
+  <main id="conteudo">
+    <section id="inicio" class="hero motion-scene" data-scene="hero">
       <div class="hero-copy">
-        <p class="eyebrow" data-reveal>REDECORAÇÃO RESIDENCIAL · ENVELHECIMENTO COM DIGNIDADE</p>
-        <h1 data-title-reveal>Uma casa mais simples de entender, mais fácil de percorrer e ainda com cara de casa.</h1>
-        <p class="lede" data-reveal>Plano conceitual para reorganizar a sala de estar e jantar dos seus avós sem descaracterizar o apartamento. A prioridade é reduzir obstáculos, melhorar a leitura visual do espaço, preservar referências familiares e criar conforto real para a rotina de dois idosos — incluindo um morador com Alzheimer.</p>
+        <p class="eyebrow" data-reveal>READEQUAÇÃO RESIDENCIAL · AGEING-IN-PLACE</p>
+        <h1 data-title-reveal>Uma casa que continua sendo <em>deles.</em></h1>
+        <p class="lede" data-reveal>Redesenhar para envelhecer com segurança, autonomia e memória — sem transformar o lar em clínica.</p>
         <div class="hero-actions" data-reveal>
-          <a class="button" href="#galeria">Ver o apartamento redecorado</a>
-          <a class="button ghost" href="#prioridades">Ver plano de intervenção</a>
+          <a class="button magnetic" href="#transformacao">Explorar o projeto</a>
+          <a class="button ghost" href="#intervencoes">Ver intervenções</a>
         </div>
+        <dl class="hero-facts" data-reveal>
+          <div><dt>Escopo validado</dt><dd>Sala + jantar</dd></div>
+          <div><dt>Direção</dt><dd>Quiet warm architecture</dd></div>
+          <div><dt>Prioridade</dt><dd>Segurança + orientação</dd></div>
+        </dl>
       </div>
-      <figure class="hero-visual" data-parallax>
-        <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:bb677a9c-867e-483f-965f-bbaa41dd10e2" alt="Visualização realista da sala redecorada, com mobiliário mais claro e circulação ampliada" fetchpriority="high" />
-        <figcaption>Visualização conceitual baseada na fotografia real do ambiente.</figcaption>
+
+      <figure class="hero-visual editorial-photo" data-parallax data-focus>
+        <img src="https://at.adobe.com/NrigT8cw5gSVd3Yg" alt="Visualização fotorrealista da sala e jantar readequados, com madeira clara, assentos com braços, circulação livre e iluminação quente" width="1440" height="1080" fetchpriority="high" />
+        <figcaption>
+          <span>Vista 01</span>
+          Proposta-conceito baseada nos dois ângulos reais documentados do ambiente.
+        </figcaption>
       </figure>
-      <div class="scroll-cue" aria-hidden="true">ROLE PARA CONTINUAR <span>↓</span></div>
+
+      <div class="scroll-cue" id="scrollCue" aria-hidden="true">ROLE PARA CONTINUAR <span>↓</span></div>
     </section>
 
-    <section id="conceito" class="intro motion-scene">
-      <div class="section-number" aria-hidden="true">01</div>
+    <section class="scope-note motion-scene" aria-labelledby="scopeTitle">
+      <div class="scope-icon" aria-hidden="true">01</div>
       <div>
-        <p class="eyebrow" data-reveal>PRINCÍPIO CENTRAL</p>
-        <h2 data-title-reveal>Menos obstáculos. Mais referências. Nenhuma estética hospitalar.</h2>
+        <p class="eyebrow" data-reveal>REGRA DE FIDELIDADE</p>
+        <h2 id="scopeTitle" data-title-reveal>O que não foi fotografado, não foi inventado.</h2>
+        <p data-reveal>O material disponível documenta com segurança a sala de estar/jantar. Por isso, este primeiro projeto executivo-conceitual aprofunda esse ambiente. Quarto, banheiro e cozinha permanecem como <strong>escopo pendente de documentação</strong>: as recomendações gerais aparecem aqui, mas não há renders falsamente precisos desses cômodos.</p>
       </div>
-      <p class="body-large" data-reveal>O redesenho não tenta transformar o apartamento em uma clínica. A estratégia é residencial: retirar ruído, dar previsibilidade ao layout, usar contraste de forma controlada, suavizar quinas, esconder cabos, estabilizar o mobiliário e manter elementos que reforçam familiaridade e identidade.</p>
+      <div class="scope-badge" data-reveal>
+        <span>PRÓXIMO INSUMO</span>
+        <b>Fotos + medidas dos demais ambientes</b>
+        <small>dimensões: necessitam validação in loco</small>
+      </div>
     </section>
 
-    <section class="before-after motion-scene" aria-labelledby="antesDepoisTitulo">
-      <div class="sticky-stage">
-        <div class="ba-copy">
-          <p class="eyebrow">ANTES → DEPOIS</p>
-          <h2 id="antesDepoisTitulo">A arquitetura permanece. O comportamento do espaço muda.</h2>
-          <p>O objetivo é preservar o que já é reconhecível — janela, luz, piso, proporção e rotina — e alterar aquilo que cria atrito: passagem estreita, fios, brilho, quinas, móveis baixos ou instáveis e excesso de objetos.</p>
+    <section id="diagnostico" class="diagnosis motion-scene">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>DIAGNÓSTICO VISUAL</p>
+          <h2 data-title-reveal>Antes de decorar, ler o espaço como sistema de risco e orientação.</h2>
         </div>
-        <div class="comparison" data-focus>
-          <figure>
-            <img src="assets/antes-01.jpeg" alt="Sala original antes da redecoração" loading="lazy" decoding="async" />
-            <figcaption><span>ANTES</span> configuração atual</figcaption>
-          </figure>
-          <figure>
-            <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:bb677a9c-867e-483f-965f-bbaa41dd10e2" alt="Sala após proposta de redecoração conceitual" loading="lazy" decoding="async" />
-            <figcaption><span>DEPOIS</span> proposta conceitual</figcaption>
-          </figure>
+        <p data-reveal>Os dois registros originais mostram uma sala integrada com boa luz natural e área central generosa, mas também pontos de atenção que ganham importância em uma casa ocupada por idosos.</p>
+      </header>
+
+      <div class="audit-grid">
+        <figure class="audit-photo" data-reveal>
+          <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:83779ad1-c552-4362-9355-6abcacb57567" alt="Reconstituição anonimizada da configuração atual da sala, sem pessoas" width="1440" height="810" loading="lazy" decoding="async" />
+          <span class="hotspot h1" aria-hidden="true">1</span>
+          <span class="hotspot h2" aria-hidden="true">2</span>
+          <span class="hotspot h3" aria-hidden="true">3</span>
+          <span class="hotspot h4" aria-hidden="true">4</span>
+          <figcaption>Imagem de auditoria anonimizada. Pessoas foram removidas por privacidade; a leitura espacial permanece conceitual.</figcaption>
+        </figure>
+
+        <ol class="audit-list">
+          <li data-reveal><span>1</span><div><b>Circulação entre jantar e estar</b><p>Cadeiras e mesa ocupam o eixo central. A proposta busca uma rota mais previsível e contínua, sem exigir desvios estreitos.</p></div></li>
+          <li data-reveal><span>2</span><div><b>Cabos e elementos altos aparentes</b><p>A instalação visível próxima ao teto e à mídia deve ser organizada, reduzindo ruído visual e evitando fios acessíveis.</p></div></li>
+          <li data-reveal><span>3</span><div><b>Equipamento portátil em zona de passagem</b><p>Equipamentos móveis próximos ao percurso podem virar obstáculo. O projeto prevê posição fixa ou solução integrada.</p></div></li>
+          <li data-reveal><span>4</span><div><b>Contraste de luz e reflexos</b><p>A janela oferece excelente iluminação, mas o contraste entre exterior muito claro e interior pode gerar ofuscamento. Cortinas e luz de apoio equilibram a cena.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="principles motion-scene" aria-labelledby="principlesTitle">
+      <header class="section-head compact">
+        <div>
+          <p class="eyebrow" data-reveal>5 PRINCÍPIOS</p>
+          <h2 id="principlesTitle" data-title-reveal>O ambiente deve ajudar sem parecer que está ajudando.</h2>
+        </div>
+      </header>
+      <div class="principle-grid">
+        <article data-reveal><span>01</span><h3>Segurança discreta</h3><p>Eliminar obstáculos e instabilidade sem criar estética institucional.</p></article>
+        <article data-reveal><span>02</span><h3>Orientação</h3><p>Rotas simples, marcos visuais claros e organização espacial previsível.</p></article>
+        <article data-reveal><span>03</span><h3>Memória</h3><p>Fotografias, objetos e materiais familiares continuam fazendo parte do lar.</p></article>
+        <article data-reveal><span>04</span><h3>Autonomia</h3><p>Assentos, iluminação e circulação devem facilitar ações cotidianas.</p></article>
+        <article data-reveal><span>05</span><h3>Conforto</h3><p>Quiet luxury: luz quente, madeira, tecidos calmos e menos ruído sensorial.</p></article>
+      </div>
+    </section>
+
+    <section id="transformacao" class="transformation motion-scene pinned-scene">
+      <div class="pinned-stage">
+        <header class="scene-copy">
+          <p class="eyebrow" data-reveal>ANTES ↔ DEPOIS</p>
+          <h2 data-title-reveal>A arquitetura permanece. O comportamento do espaço muda.</h2>
+          <p data-reveal>A comparação usa uma vista “antes” anonimizada para não publicar imagens identificáveis dos moradores.</p>
+        </header>
+
+        <div class="compare-shell" data-compare>
+          <div class="compare-static no-js-only">
+            <figure><img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:83779ad1-c552-4362-9355-6abcacb57567" alt="Antes anonimizado" width="1440" height="810" loading="lazy" /><figcaption>Antes</figcaption></figure>
+            <figure><img src="https://at.adobe.com/NrigT8cw5gSVd3Yg" alt="Depois proposto" width="1440" height="1080" loading="lazy" /><figcaption>Depois</figcaption></figure>
+          </div>
+          <div class="compare-slider js-only">
+            <div class="compare-frame">
+              <img class="compare-after" src="https://at.adobe.com/NrigT8cw5gSVd3Yg" alt="Depois: proposta de sala readequada" width="1440" height="1080" loading="lazy" decoding="async" />
+              <div class="compare-before-wrap" id="beforeWrap">
+                <img class="compare-before" src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:83779ad1-c552-4362-9355-6abcacb57567" alt="Antes: configuração atual anonimizada" width="1440" height="810" loading="lazy" decoding="async" />
+              </div>
+              <div class="compare-line" id="compareLine" aria-hidden="true"><span>↔</span></div>
+            </div>
+            <label for="compareRange">Arraste para comparar antes e depois</label>
+            <input id="compareRange" type="range" min="0" max="100" value="48" aria-label="Comparação entre antes e depois" />
+            <div class="compare-labels"><span>ANTES</span><span>DEPOIS</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="concept-map motion-scene" aria-labelledby="mapTitle">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>DIAGRAMA CONCEITUAL · NÃO É PLANTA</p>
+          <h2 id="mapTitle" data-title-reveal>Quatro zonas, um percurso legível.</h2>
+        </div>
+        <p data-reveal>Como não há planta técnica nem medidas conferidas, o diagrama abaixo mostra relações funcionais, e não dimensões exatas.</p>
+      </header>
+
+      <div class="map-layout">
+        <svg class="zoning-map" viewBox="0 0 820 520" role="img" aria-labelledby="zoningTitle zoningDesc" data-reveal>
+          <title id="zoningTitle">Diagrama conceitual da sala e jantar</title>
+          <desc id="zoningDesc">Janela ao fundo, jantar próximo à luz natural, estar lateral, mídia na parede oposta e eixo de circulação livre entre entrada e janela.</desc>
+          <rect x="20" y="20" width="780" height="480" rx="34" class="map-room" />
+          <rect x="105" y="65" width="610" height="46" rx="18" class="map-window" />
+          <text x="410" y="95" text-anchor="middle">JANELA / LUZ NATURAL</text>
+          <rect x="365" y="148" width="300" height="190" rx="28" class="zone zone-dining" />
+          <text x="515" y="235" text-anchor="middle">JANTAR</text>
+          <text x="515" y="260" text-anchor="middle" class="map-small">mesa estável · cadeiras com apoio</text>
+          <rect x="90" y="170" width="230" height="210" rx="28" class="zone zone-living" />
+          <text x="205" y="265" text-anchor="middle">ESTAR</text>
+          <text x="205" y="290" text-anchor="middle" class="map-small">assentos firmes · memória afetiva</text>
+          <rect x="675" y="170" width="70" height="210" rx="24" class="zone zone-media" />
+          <text x="710" y="275" text-anchor="middle" transform="rotate(90 710 275)">MÍDIA / TV</text>
+          <path d="M405 450 C405 390, 400 340, 400 300 C400 245, 340 220, 300 215" class="route" />
+          <path d="M405 450 C470 390, 530 355, 560 330" class="route route-alt" />
+          <circle cx="405" cy="450" r="13" class="route-dot" />
+          <text x="405" y="486" text-anchor="middle" class="map-small">ENTRADA / EIXO DE CIRCULAÇÃO</text>
+        </svg>
+
+        <div class="map-legend" data-reveal>
+          <article><i class="legend-swatch l1"></i><div><b>Estar</b><p>Convívio e assentos de apoio.</p></div></article>
+          <article><i class="legend-swatch l2"></i><div><b>Jantar</b><p>Uso cotidiano e mesa estável.</p></div></article>
+          <article><i class="legend-swatch l3"></i><div><b>Mídia</b><p>TV, fios ocultos e baixo ruído visual.</p></div></article>
+          <article><i class="legend-line"></i><div><b>Circulação</b><p>Trajeto livre e previsível.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="design-bible motion-scene" aria-labelledby="bibleTitle">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>DESIGN BIBLE</p>
+          <h2 id="bibleTitle" data-title-reveal>Uma linguagem única para todas as vistas.</h2>
+        </div>
+        <p data-reveal>O conjunto visual foi congelado em uma mesma família de materiais para reduzir “mutação de projeto” entre renders.</p>
+      </header>
+
+      <div class="bible-grid">
+        <article class="palette-card" data-reveal>
+          <h3>Paleta</h3>
+          <div class="swatches" aria-label="Paleta de cores">
+            <span style="--c:#F4EEE6"><b>Creme</b><small>#F4EEE6</small></span>
+            <span style="--c:#8F9670"><b>Sálvia</b><small>#8F9670</small></span>
+            <span style="--c:#BC6D45"><b>Terracota</b><small>#BC6D45</small></span>
+            <span style="--c:#B99263"><b>Madeira</b><small>#B99263</small></span>
+            <span style="--c:#2B241F"><b>Grafite</b><small>#2B241F</small></span>
+          </div>
+        </article>
+        <article data-reveal><span class="card-kicker">MATERIAL</span><h3>Madeira natural fosca</h3><p>Calor residencial sem reflexo excessivo. Preferência por bordas suavizadas.</p></article>
+        <article data-reveal><span class="card-kicker">TÊXTIL</span><h3>Linho e texturas calmas</h3><p>Superfícies táteis de fácil leitura, sem padrões visuais agressivos.</p></article>
+        <article data-reveal><span class="card-kicker">ASSENTOS</span><h3>Firmes + apoio de braços</h3><p>Ajuda no movimento de sentar e levantar. Alturas finais exigem teste real com os moradores.</p></article>
+        <article data-reveal><span class="card-kicker">LUZ</span><h3>Quente e homogênea</h3><p>Camadas de luz natural filtrada, geral difusa e apoio localizado.</p></article>
+        <article data-reveal><span class="card-kicker">MEMÓRIA</span><h3>Fotos e objetos familiares</h3><p>Curadoria enxuta: referências reconhecíveis sem excesso de estímulo.</p></article>
+      </div>
+    </section>
+
+    <section id="intervencoes" class="interventions motion-scene">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>MATRIZ DE DECISÃO</p>
+          <h2 data-title-reveal>Intervenções ordenadas pelo que muda a rotina.</h2>
+        </div>
+        <p data-reveal>Classificação qualitativa derivada da auditoria visual. Antes de execução, validar medidas, ergonomia e condições técnicas no local.</p>
+      </header>
+
+      <div class="priority-summary" data-reveal aria-label="Distribuição de prioridades">
+        <div><span>Segurança imediata</span><i style="--w:92%"></i><b>4</b></div>
+        <div><span>Acessibilidade</span><i style="--w:78%"></i><b>3</b></div>
+        <div><span>Cognição / orientação</span><i style="--w:68%"></i><b>3</b></div>
+        <div><span>Conforto / estética</span><i style="--w:54%"></i><b>4</b></div>
+      </div>
+
+      <div class="filter-bar js-only" role="group" aria-label="Filtrar intervenções por categoria" data-reveal>
+        <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">Todas</button>
+        <button type="button" class="filter" data-filter="seguranca" aria-pressed="false">Segurança</button>
+        <button type="button" class="filter" data-filter="mobilidade" aria-pressed="false">Mobilidade</button>
+        <button type="button" class="filter" data-filter="cognicao" aria-pressed="false">Cognição</button>
+        <button type="button" class="filter" data-filter="iluminacao" aria-pressed="false">Iluminação</button>
+      </div>
+
+      <div class="table-wrap" data-reveal>
+        <table class="decision-table">
+          <caption>Intervenções propostas para sala e jantar</caption>
+          <thead><tr><th>Intervenção</th><th>Problema / risco</th><th>Solução</th><th>Benefício</th><th>Prioridade</th><th>Validação</th></tr></thead>
+          <tbody>
+            <tr data-category="seguranca"><td>Cabos e instalação aparente</td><td>Ruído visual + possível contato/enganche</td><td>Canaleta embutida ou rota técnica protegida</td><td>Menos distração e risco</td><td><span class="priority critical">Crítico</span></td><td>Eletricista</td></tr>
+            <tr data-category="seguranca mobilidade"><td>Equipamento portátil no percurso</td><td>Obstáculo variável</td><td>Retirar da rota ou substituir por solução fixa</td><td>Percurso mais previsível</td><td><span class="priority critical">Crítico</span></td><td>In loco</td></tr>
+            <tr data-category="mobilidade"><td>Cadeiras no eixo central</td><td>Desvio e estreitamento do percurso</td><td>Reposicionar jantar e limitar cadeiras fora de uso</td><td>Circulação mais legível</td><td><span class="priority important">Importante</span></td><td>Medidas</td></tr>
+            <tr data-category="mobilidade seguranca"><td>Assentos de uso frequente</td><td>Apoio variável para levantar</td><td>Priorizar braços, firmeza e altura confortável</td><td>Mais autonomia ao sentar/levantar</td><td><span class="priority important">Importante</span></td><td>Teste ergonômico</td></tr>
+            <tr data-category="iluminacao cognicao"><td>Contraste janela/interior</td><td>Ofuscamento e leitura espacial desigual</td><td>Cortina translúcida + luz de apoio homogênea</td><td>Visão mais confortável</td><td><span class="priority important">Importante</span></td><td>Luminotécnica</td></tr>
+            <tr data-category="cognicao"><td>Excesso de objetos soltos</td><td>Ruído visual e procura difícil</td><td>Curadoria de superfícies e lugares fixos</td><td>Rotina e orientação</td><td><span class="priority important">Importante</span></td><td>Família</td></tr>
+            <tr data-category="cognicao"><td>Ausência de marco temporal destacado</td><td>Menos pista de orientação cotidiana</td><td>Relógio grande, legível e consistente</td><td>Referência temporal simples</td><td><span class="priority comfort">Conforto</span></td><td>Família</td></tr>
+            <tr data-category="seguranca"><td>Móvel de mídia / objetos</td><td>Possível instabilidade e cabos</td><td>Fixar/estabilizar, ocultar fios e reduzir objetos</td><td>Menos risco e mais clareza</td><td><span class="priority important">Importante</span></td><td>Marceneiro</td></tr>
+            <tr data-category="iluminacao"><td>Luz noturna</td><td>Percurso menos evidente no escuro</td><td>Balizadores discretos e luz indireta</td><td>Orientação noturna</td><td><span class="priority important">Importante</span></td><td>Elétrica</td></tr>
+            <tr data-category="cognicao"><td>Memória afetiva dispersa</td><td>Referências sem hierarquia</td><td>Galeria familiar enxuta e estável</td><td>Pertencimento e reconhecimento</td><td><span class="priority comfort">Conforto</span></td><td>Família</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="lighting-story motion-scene" data-focus>
+      <div class="lighting-image editorial-photo" data-parallax>
+        <img src="https://at.adobe.com/WI5ucIZrqYhZbPhN" alt="Sala no período noturno com iluminação indireta quente e uniforme" width="1440" height="1080" loading="lazy" decoding="async" />
+      </div>
+      <div class="lighting-copy">
+        <p class="eyebrow" data-reveal>CENA NOTURNA</p>
+        <h2 data-title-reveal>A luz também é um elemento de orientação.</h2>
+        <p data-reveal>O cenário noturno propõe iluminação indireta, pontos de apoio e transições mais suaves entre zonas claras e escuras. Para uma casa com idoso e demência, a meta é evitar que o percurso dependa de um único ponto de luz ou de interruptores difíceis de localizar.</p>
+        <div class="light-levels" data-reveal>
+          <span><i></i>luz geral difusa</span>
+          <span><i></i>luz de apoio junto aos assentos</span>
+          <span><i></i>balizamento noturno discreto</span>
         </div>
       </div>
     </section>
 
     <section id="galeria" class="gallery-section motion-scene">
-      <div class="gallery-head">
+      <header class="section-head">
         <div>
-          <p class="eyebrow" data-reveal>08 VISUALIZAÇÕES</p>
-          <h2 data-title-reveal>O mesmo projeto, visto como espaço vivido.</h2>
+          <p class="eyebrow" data-reveal>GALERIA · 11 PEÇAS VISUAIS</p>
+          <h2 data-title-reveal>O mesmo conceito visto como espaço vivido.</h2>
         </div>
-        <p data-reveal>As imagens são estudos visuais gerados a partir das fotografias reais. Elas servem para definir linguagem, mobiliário, luz e prioridades de circulação; medidas finais devem ser conferidas no local antes de compra ou execução.</p>
-      </div>
+        <p data-reveal>As vistas são estudos de direção arquitetônica. Elas comunicam materialidade, atmosfera, relações funcionais e intenção de uso; não substituem levantamento métrico, projeto executivo ou validação técnica.</p>
+      </header>
 
       <div class="gallery-grid">
-        <figure class="gallery-card featured" data-reveal>
-          <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:bb677a9c-867e-483f-965f-bbaa41dd10e2" alt="Vista principal da sala redecorada" loading="lazy" decoding="async" />
-          <figcaption><b>01 · Vista principal</b><span>Conforto residencial, iluminação difusa e mobiliário com leitura clara.</span></figcaption>
-        </figure>
-        <figure class="gallery-card" data-reveal>
-          <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:e55ce64a-038b-4919-a5e4-68c57b5b892f" alt="Vista reversa do ambiente redecorado" loading="lazy" decoding="async" />
-          <figcaption><b>02 · Vista reversa</b><span>Organização do estar em relação à janela e à circulação.</span></figcaption>
-        </figure>
-        <figure class="gallery-card" data-reveal>
-          <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:9125db8b-00db-4207-8d87-417b06357268" alt="Vista diagonal da sala redecorada" loading="lazy" decoding="async" />
-          <figcaption><b>03 · Diagonal da janela</b><span>Leitura contínua entre jantar, estar e parede da TV.</span></figcaption>
-        </figure>
-        <figure class="gallery-card" data-reveal>
-          <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:072374b1-5675-4757-9632-6c8ad7fa0c66" alt="Área de jantar redecorada com mesa de madeira fosca" loading="lazy" decoding="async" />
-          <figcaption><b>04 · Área de jantar</b><span>Superfícies foscas, quinas suavizadas e cadeiras mais estáveis.</span></figcaption>
-        </figure>
-        <figure class="gallery-card featured" data-reveal>
-          <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:d195d625-bd0e-4375-9fd0-97e96d197fec" alt="Circulação livre vista a partir da entrada da sala" loading="lazy" decoding="async" />
-          <figcaption><b>05 · Circulação</b><span>Rotas desobstruídas e layout previsível entre os pontos de uso.</span></figcaption>
-        </figure>
-        <figure class="gallery-card" data-reveal>
-          <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:a81d13a6-ea0a-40f8-8896-aeea2bf56903" alt="Área de estar redecorada com assentos firmes e braços" loading="lazy" decoding="async" />
-          <figcaption><b>06 · Estar</b><span>Assentos com apoio de braços, contraste suave e objetos essenciais organizados.</span></figcaption>
-        </figure>
-        <figure class="gallery-card" data-reveal>
-          <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:f7096c53-ba6e-4217-a6a2-99088bb35d9d" alt="Parede da TV com cabos ocultos e aparador fixado" loading="lazy" decoding="async" />
-          <figcaption><b>07 · Parede da TV</b><span>Menos fios, menos brilho e menos elementos soltos próximos à passagem.</span></figcaption>
-        </figure>
-        <figure class="gallery-card" data-reveal>
-          <img src="https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:ec89c4d0-02a4-4667-916e-c0b48d9ba420" alt="Vista noturna com iluminação quente e uniforme" loading="lazy" decoding="async" />
-          <figcaption><b>08 · Cenário noturno</b><span>Iluminação homogênea, sem zonas de sombra agressiva no percurso.</span></figcaption>
-        </figure>
+        <figure class="gallery-card hero-card" data-reveal><img src="https://at.adobe.com/NrigT8cw5gSVd3Yg" alt="Vista principal final da sala" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>01 · Hero final</b><span>Síntese da linguagem residencial acolhedora.</span></figcaption></figure>
+        <figure class="gallery-card" data-reveal><img src="https://at.adobe.com/z801MSHn25cG3akA" alt="Segunda vista geral da sala e jantar" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>02 · Vista geral</b><span>Relação entre estar, jantar e luz natural.</span></figcaption></figure>
+        <figure class="gallery-card" data-reveal><img src="https://at.adobe.com/OZ7pabgqvtYjZZQs" alt="Vista reversa do ambiente" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>03 · Vista reversa</b><span>Leitura da mídia e rota lateral.</span></figcaption></figure>
+        <figure class="gallery-card" data-reveal><img src="https://at.adobe.com/UIjrXFS1gD1KbjDz" alt="Vista diagonal do ambiente" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>04 · Diagonal</b><span>Integração visual entre as zonas.</span></figcaption></figure>
+        <figure class="gallery-card" data-reveal><img src="https://at.adobe.com/jLLsyHgnzJ9Ho0xJ" alt="Detalhe do estar e assentos" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>05 · Estar</b><span>Assentos, apoio lateral e memória afetiva.</span></figcaption></figure>
+        <figure class="gallery-card" data-reveal><img src="https://at.adobe.com/ucktUIRIrylbZnzs" alt="Detalhe da área de jantar" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>06 · Jantar</b><span>Mesa estável e cadeiras com maior apoio.</span></figcaption></figure>
+        <figure class="gallery-card wide" data-reveal><img src="https://at.adobe.com/lgrG6WHILXXfEiTL" alt="Parede de mídia organizada" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>07 · Parede de mídia</b><span>Menos fios, menos ruído e composição mais estável.</span></figcaption></figure>
+        <figure class="gallery-card" data-reveal><img src="https://at.adobe.com/0QiDazHUiJ1yHKjP" alt="Vista a partir da entrada com circulação livre" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>08 · Circulação</b><span>O percurso aparece antes dos móveis.</span></figcaption></figure>
+        <figure class="gallery-card" data-reveal><img src="https://at.adobe.com/B4EQ1AcuMckYGFVh" alt="Vista lateral com janela e materiais" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>09 · Luz natural</b><span>Cortinas e luz filtrada reduzem contraste duro.</span></figcaption></figure>
+        <figure class="gallery-card" data-reveal><img src="https://at.adobe.com/WI5ucIZrqYhZbPhN" alt="Sala no entardecer" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>10 · Anoitecer</b><span>Camadas de luz e sensação de continuidade.</span></figcaption></figure>
+        
+        <figure class="gallery-card wide" data-reveal><img src="https://at.adobe.com/uOAompfnK6Xl7c2H" alt="Prancha conceitual com paleta, materiais e princípios de projeto" width="1440" height="1080" loading="lazy" decoding="async" /><figcaption><b>11 · Moodboard</b><span>Paleta, texturas e narrativa material do projeto.</span></figcaption></figure>
       </div>
     </section>
 
-    <section class="principles motion-scene" aria-labelledby="principiosTitulo">
-      <div class="principles-head">
-        <p class="eyebrow" data-reveal>SEIS REGRAS DE PROJETO</p>
-        <h2 id="principiosTitulo" data-title-reveal>O ambiente deve ajudar sem parecer que está ajudando.</h2>
-      </div>
-      <div class="principle-grid">
-        <article data-reveal><span>01</span><h3>Caminho legível</h3><p>Manter o eixo de circulação livre, sem mesinhas, aquecedores, fios ou peças decorativas invadindo a rota.</p></article>
-        <article data-reveal><span>02</span><h3>Apoio ao sentar e levantar</h3><p>Priorizar sofá, poltronas e cadeiras firmes, com braços e altura confortável, evitando assentos excessivamente baixos ou profundos.</p></article>
-        <article data-reveal><span>03</span><h3>Contraste controlado</h3><p>Diferenciar mobiliário, piso e paredes o suficiente para leitura espacial, evitando estampas intensas e padrões que possam confundir.</p></article>
-        <article data-reveal><span>04</span><h3>Luz homogênea</h3><p>Combinar luz natural filtrada e luz artificial difusa, reduzindo ofuscamento, reflexos e mudanças bruscas entre claro e escuro.</p></article>
-        <article data-reveal><span>05</span><h3>Familiaridade</h3><p>Preservar fotografias, objetos de memória e uma organização estável. O redesenho não precisa apagar a história da casa.</p></article>
-        <article data-reveal><span>06</span><h3>Menos risco discreto</h3><p>Fixar móveis altos, ocultar cabos, arredondar quinas e eliminar tapetes soltos sem transformar o espaço em ambiente institucional.</p></article>
-      </div>
-    </section>
-
-    <section id="prioridades" class="priority-section motion-scene">
-      <div class="priority-copy">
-        <p class="eyebrow" data-reveal>PLANO DE EXECUÇÃO</p>
-        <h2 data-title-reveal>Fazer primeiro o que muda a rotina. Decorar depois.</h2>
-        <p data-reveal>Uma boa intervenção para idosos começa pela função. O acabamento vem por cima de um layout seguro, estável e previsível.</p>
-      </div>
-      <div class="priority-list" role="list">
-        <article role="listitem" data-reveal><div class="priority-index">A</div><div><h3>Imediato · circulação e riscos</h3><p>Remover fios do percurso, relocar o aquecedor portátil, reduzir objetos no chão, estabilizar o aparador e revisar quinas salientes.</p></div><span class="tag">1º</span></article>
-        <article role="listitem" data-reveal><div class="priority-index">B</div><div><h3>Mobiliário · apoio físico</h3><p>Trocar assentos muito baixos por modelos firmes com braços; adotar mesa fosca, estável e com cantos arredondados; validar alturas no local.</p></div><span class="tag">2º</span></article>
-        <article role="listitem" data-reveal><div class="priority-index">C</div><div><h3>Iluminação · orientação</h3><p>Distribuir iluminação quente e uniforme, reduzir reflexos na TV e na janela e considerar balizadores discretos para períodos noturnos.</p></div><span class="tag">3º</span></article>
-        <article role="listitem" data-reveal><div class="priority-index">D</div><div><h3>Acabamento · identidade</h3><p>Aplicar a paleta neutra, madeira fosca, tecidos de fácil manutenção e objetos familiares, mantendo poucos elementos por superfície.</p></div><span class="tag">4º</span></article>
+    <section class="future-scope motion-scene" aria-labelledby="futureTitle">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>ESCOPOS A EXPANDIR</p>
+          <h2 id="futureTitle" data-title-reveal>Banheiro, quarto e cozinha entram na próxima rodada — com base real.</h2>
+        </div>
+        <p data-reveal>O projeto completo do apartamento exige documentação desses ambientes. Abaixo estão os critérios que serão auditados assim que houver material.</p>
+      </header>
+      <div class="future-grid">
+        <article data-reveal><span>01</span><h3>Banheiro</h3><p>Barras, box, piso molhado, contraste, banco de banho, iluminação, abertura de porta e circulação.</p><b>Exige fotos + medidas</b></article>
+        <article data-reveal><span>02</span><h3>Quarto</h3><p>Cama → banheiro, iluminação noturna, apoios, armazenamento, altura de assentos e rotas.</p><b>Exige fotos + medidas</b></article>
+        <article data-reveal><span>03</span><h3>Cozinha</h3><p>Acesso a utensílios, iluminação de bancada, organização, gás/eletricidade, superfícies e riscos térmicos.</p><b>Exige fotos + medidas</b></article>
       </div>
     </section>
 
-    <section class="palette motion-scene">
-      <div>
-        <p class="eyebrow" data-reveal>PALETA PROPOSTA</p>
-        <h2 data-title-reveal>Quente, natural e silenciosa.</h2>
-      </div>
-      <div class="swatches" aria-label="Paleta de cores">
-        <div class="swatch"><i style="--c:#EDE5D7"></i><b>Creme</b><span>#EDE5D7</span></div>
-        <div class="swatch"><i style="--c:#C6B294"></i><b>Carvalho</b><span>#C6B294</span></div>
-        <div class="swatch"><i style="--c:#899784"></i><b>Sálvia</b><span>#899784</span></div>
-        <div class="swatch"><i style="--c:#B8755A"></i><b>Terracota</b><span>#B8755A</span></div>
-        <div class="swatch"><i style="--c:#3E413C"></i><b>Grafite suave</b><span>#3E413C</span></div>
-      </div>
+    <section id="execucao" class="timeline-section motion-scene">
+      <header class="section-head compact">
+        <div>
+          <p class="eyebrow" data-reveal>ROADMAP DE IMPLANTAÇÃO</p>
+          <h2 data-title-reveal>Fazer primeiro o que muda segurança e rotina.</h2>
+        </div>
+      </header>
+      <ol class="timeline">
+        <li data-reveal><span>FASE 01</span><div><h3>Segurança imediata</h3><p>Cabos, objetos soltos, equipamento portátil, estabilidade de móveis e percurso.</p></div><b>agora</b></li>
+        <li data-reveal><span>FASE 02</span><div><h3>Acessibilidade</h3><p>Assentos, mesa, alturas, apoio físico e validação ergonômica.</p></div><b>curto prazo</b></li>
+        <li data-reveal><span>FASE 03</span><div><h3>Cognição e orientação</h3><p>Relógio, referências fixas, organização previsível e redução de ruído visual.</p></div><b>curto prazo</b></li>
+        <li data-reveal><span>FASE 04</span><div><h3>Conforto luminotécnico</h3><p>Cortinas, luz indireta, balizadores e uniformidade entre zonas.</p></div><b>obra leve</b></li>
+        <li data-reveal><span>FASE 05</span><div><h3>Redesign estético</h3><p>Marcenaria, tecidos, paleta, decoração e acabamento final.</p></div><b>finalização</b></li>
+      </ol>
     </section>
 
-    <section class="reality-check motion-scene">
-      <figure data-parallax>
-        <img src="assets/antes-02.jpeg" alt="Segunda fotografia do ambiente original, mostrando TV, jantar e poltrona" loading="lazy" decoding="async" />
-      </figure>
-      <div>
-        <p class="eyebrow" data-reveal>DO CONCEITO PARA A OBRA</p>
-        <h2 data-title-reveal>Antes de comprar qualquer móvel, medir.</h2>
-        <p data-reveal>As imagens servem como direção visual e funcional, não como levantamento métrico. A etapa executiva deve confirmar largura de circulação, altura dos assentos, espaço de abertura, tomadas, posição da TV, iluminação e fixação de mobiliário. Para necessidades específicas do seu avô, vale validar as escolhas finais com profissional de saúde ou terapia ocupacional que conheça a rotina dele.</p>
+    <section class="evidence motion-scene" aria-labelledby="evidenceTitle">
+      <header class="section-head compact">
+        <div>
+          <p class="eyebrow" data-reveal>FUNDAMENTOS EXTERNOS</p>
+          <h2 id="evidenceTitle" data-title-reveal>As decisões de segurança não são ornamentais.</h2>
+        </div>
+      </header>
+      <div class="evidence-grid">
+        <a href="https://www.cdc.gov/falls/prevention/index.html" target="_blank" rel="noreferrer" data-reveal><span>CDC</span><h3>Prevenção de quedas</h3><p>Remoção de riscos de tropeço, barras de apoio e iluminação mais adequada.</p></a>
+        <a href="https://www.alz.org/help-support/caregiving/safety/home-safety" target="_blank" rel="noreferrer" data-reveal><span>Alzheimer's Association</span><h3>Segurança domiciliar</h3><p>Rotas bem iluminadas, redução de clutter, estabilidade de mobiliário e adaptação progressiva.</p></a>
+        <a href="https://www.nia.nih.gov/health/falls-and-falls-prevention/preventing-falls-home-room-room" target="_blank" rel="noreferrer" data-reveal><span>NIA</span><h3>Prevenção por ambiente</h3><p>Orientações específicas para pisos, corredores, banheiro, quarto e cozinha.</p></a>
       </div>
+      <p class="evidence-note" data-reveal>Este material é um estudo conceitual de interiores, não substitui avaliação de terapeuta ocupacional, arquiteto/engenheiro responsável, eletricista ou profissional de saúde que conheça a rotina e o estágio clínico do morador.</p>
     </section>
 
     <section class="closing motion-scene">
-      <p class="eyebrow" data-reveal>OBJETIVO FINAL</p>
-      <h2 data-title-reveal>Uma casa que continua sendo deles — só que mais fácil de viver.</h2>
-      <p data-reveal>O melhor resultado não chama atenção para adaptações. Ele devolve espaço, clareza, conforto e familiaridade.</p>
+      <p class="eyebrow" data-reveal>CASA QUE ACOLHE</p>
+      <h2 data-title-reveal>Menos barreiras. Mais autonomia. A mesma história.</h2>
+      <p class="body-large" data-reveal>O objetivo não é criar um “apartamento adaptado” que pareça adaptado. É fazer com que a casa continue familiar, mas trabalhe a favor de quem mora nela: mais previsível, mais calma, mais confortável e mais segura.</p>
+      <div class="closing-actions" data-reveal>
+        <a class="button magnetic" href="#inicio">Voltar ao topo</a>
+        <a class="button ghost" href="#galeria">Rever as imagens</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Plano conceitual de redecoração · visualizações geradas a partir das fotografias fornecidas.</p>
-    <p>Este material não substitui avaliação clínica, ergonômica ou levantamento arquitetônico no local.</p>
+    <p>Projeto conceitual · sala de estar/jantar · dimensões e soluções técnicas finais requerem validação in loco.</p>
+    <p>Privacidade: imagens originais identificáveis não são publicadas nesta versão.</p>
   </footer>
 
-  <script src="motion.js" defer></script>
+  <script src="motion.js"></script>
 </body>
 </html>
